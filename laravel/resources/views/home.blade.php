@@ -26,7 +26,12 @@
 
                         <input type="submit" value='UPDATE IMG'>
 
+                        
                     </form>
+
+                    <a href="{{route('clear-icon')}}">
+                        <button>CLEAR</button>
+                    </a>
 
                 </div>
             </div>
@@ -40,7 +45,7 @@
 
                     <h1>Ciao {{Auth::user() -> name}}</h1>
 
-                    <img src="{{asset('storage/icon/' . Auth::user() -> icon)}}" alt="">
+                    <img src="{{asset('storage/icon/' . Auth::user() ->icon)}}" alt="">
                 </div>
             </div>
         </div>

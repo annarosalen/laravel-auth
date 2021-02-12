@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{asset('storage/icon/' . Auth::user() -> icon)}}" alt="">
+                    <img src="{{asset('storage/icon/' . Auth::user() ->icon)}}" alt="">
 
                     {{ config('app.name', 'Laravel') }}
                 </a>
