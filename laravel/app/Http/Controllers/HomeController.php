@@ -61,14 +61,15 @@ class HomeController extends Controller
 
     }
 
-    public function deleteIcon(){
+    private function deleteIcon(){
 
         $user = Auth::user();
 
         try {
+            
             $fileName = $user -> icon;
 
-            $file = storage_path('app\public\icon' . $fileName);
+            $file = storage_path('app/public/icon/' . $fileName);
             
             $res= File::delete($file);
 
